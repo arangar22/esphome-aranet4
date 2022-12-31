@@ -4,7 +4,6 @@ ble_client:
 
 sensor:
   - platform: ble_client
-    type: characteristic
     ble_client_id: aranet4
     service_uuid: "fce0"
     characteristic_uuid: "f0cd3001-95da-4f4b-9ac8-aa55d312af0c"
@@ -15,7 +14,6 @@ sensor:
     lambda: |-
       return (x[0] | x[1] << 8);
   - platform: ble_client
-    type: characteristic
     ble_client_id: aranet4
     service_uuid: "fce0"
     characteristic_uuid: "f0cd3001-95da-4f4b-9ac8-aa55d312af0c"
@@ -27,7 +25,6 @@ sensor:
     lambda: |-
       return (x[2] | x[3] << 8) / 20.0;
   - platform: ble_client
-    type: characteristic
     ble_client_id: aranet4
     service_uuid: "fce0"
     characteristic_uuid: "f0cd3001-95da-4f4b-9ac8-aa55d312af0c"
@@ -39,7 +36,6 @@ sensor:
     lambda: |-
       return (x[4] | x[5] << 8) / 10.0;
   - platform: ble_client
-    type: characteristic
     ble_client_id: aranet4
     service_uuid: "fce0"
     characteristic_uuid: "f0cd3001-95da-4f4b-9ac8-aa55d312af0c"
@@ -50,7 +46,6 @@ sensor:
     lambda: |-
       return x[6];
   - platform: ble_client
-    type: characteristic
     ble_client_id: aranet4
     service_uuid: "fce0"
     characteristic_uuid: "f0cd3001-95da-4f4b-9ac8-aa55d312af0c"
@@ -61,7 +56,6 @@ sensor:
     lambda: |-
       return x[7];
   - platform: ble_client
-    type: characteristic
     ble_client_id: aranet4
     service_uuid: "fce0"
     characteristic_uuid: "f0cd3001-95da-4f4b-9ac8-aa55d312af0c"
@@ -70,7 +64,6 @@ sensor:
     lambda: |-
       return x[8];
   - platform: ble_client
-    type: characteristic
     ble_client_id: aranet4
     service_uuid: "fce0"
     characteristic_uuid: "f0cd3001-95da-4f4b-9ac8-aa55d312af0c"
@@ -81,7 +74,6 @@ sensor:
     lambda: |-
       return (x[9] | x[10] << 8);
   - platform: ble_client
-    type: characteristic
     ble_client_id: aranet4
     service_uuid: "fce0"
     characteristic_uuid: "f0cd3001-95da-4f4b-9ac8-aa55d312af0c"
